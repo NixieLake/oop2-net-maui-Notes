@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Notes.AboutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <VerticalStackLayout Margin="10" Spacing="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image
+                HeightRequest="64"
+                SemanticProperties.Description="The dot net bot waving hello!"
+                Source="dotnet_bot.png" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Notes"
+                VerticalOptions="End" />
+            <Label
+                FontSize="22"
+                Text="v1.0"
+                VerticalOptions="End" />
+        </HorizontalStackLayout>
+
+        <Label Text="This app is written in XAML and C# with .NET MAUI." />
+        <Button Clicked="LearnMore_Clicked" Text="Learn more..." />
+    </VerticalStackLayout>
+</ContentPage>
